@@ -1,6 +1,8 @@
+import { motion } from "motion/react"
+
 const SlideUpFadeIn = () => {
     return (
-        <div>SlideUpFadeIn</div>
+        <div>Slide Up, Fade In</div>
     )
 }
 
