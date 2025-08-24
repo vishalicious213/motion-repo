@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import Info from './components/text/Info'
 import SlideUpFadeIn from './components/text/SlideUpFadeIn'
+import Typewriter from './components/text/Typewriter'
 import './App.css'
 
 function App() {
@@ -12,9 +13,10 @@ function App() {
 
 			<ul>
 				<li onClick={() => setAnimation(Info)}>Info</li>
-				
+
 				<h2>Text Animations</h2>
 				<li onClick={() => setAnimation(SlideUpFadeIn)}>Slide Up, Fade In</li>
+				<li onClick={() => setAnimation(Typewriter)}>Typewriter</li>
 			</ul>
 
 			<main>
