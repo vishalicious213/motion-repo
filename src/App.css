@@ -4,16 +4,27 @@ body {
 }
 
 h1, h2 {
-    margin-bottom: 1rem;
+    margin: 1rem 0;
+}
+
+p {
+    line-height: 1.5;
 }
 
 .selection {
+    margin-left: 1rem;
     margin-bottom: 3rem;
     cursor: pointer;
 }
 
 .selection li {
     margin-left: 1rem;
+}
+
+code {
+    background: gainsboro;
+    padding: .25rem .5rem;
+    border-radius: .25rem;
 }
 
 main {
