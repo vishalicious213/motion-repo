@@ -1,0 +1,22 @@
+body {
+    padding: 1rem;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h1, h2 {
+    margin-bottom: 1rem;
+}
+
+.selection {
+    margin-bottom: 3rem;
+    cursor: pointer;
+}
+
+.selection li {
+    margin-left: 1rem;
+}
+
+main {
+    border: 1px solid gainsboro;
+    padding: 1rem;
+}
