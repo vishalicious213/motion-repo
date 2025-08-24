@@ -6,9 +6,11 @@ import './App.css'
 
 function App() {
 	const [Animation, setAnimation] = useState(null)
+	const [renderKey, setRenderKey] = useState(0)
 
 	const handleClick = (selection) => {
 		setAnimation(() => selection)
+		setRenderKey(prev => prev + 1)
 	}
 
 	return (
@@ -24,7 +26,7 @@ function App() {
 			</ul>
 
 			<main>
-				{Animation && <Animation />}
+				{Animation && <Animation key={renderKey} />}
 			</main>
 		</>
 	)
