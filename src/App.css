@@ -12,13 +12,13 @@ p {
     margin-bottom: .5rem;
 }
 
-.selection {
+ul {
     margin-left: 1rem;
     margin-bottom: 3rem;
     cursor: pointer;
 }
 
-.selection li {
+li {
     margin-left: 1rem;
 }
 
