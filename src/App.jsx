@@ -5,22 +5,26 @@ import Typewriter from './components/text/Typewriter'
 import './App.css'
 
 function App() {
-	const [animation, setAnimation] = useState()
+	const [Animation, setAnimation] = useState(null)
+
+	const handleClick = (selection) => {
+		setAnimation(() => selection)
+	}
 
 	return (
 		<>
 			<h1>Motion animations</h1>
 
 			<ul>
-				<li onClick={() => setAnimation(Info)}>Info</li>
+				<li onClick={() => handleClick(Info)}>Info</li>
 
 				<h2>Text Animations</h2>
-				<li onClick={() => setAnimation(SlideUpFadeIn)}>Slide Up, Fade In</li>
-				<li onClick={() => setAnimation(Typewriter)}>Typewriter</li>
+				<li onClick={() => handleClick(SlideUpFadeIn)}>Slide Up, Fade In</li>
+				<li onClick={() => handleClick(Typewriter)}>Typewriter</li>
 			</ul>
 
 			<main>
-				{animation}
+				{Animation && <Animation />}
 			</main>
 		</>
 	)
