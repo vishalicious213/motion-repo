@@ -6,7 +6,6 @@ import ModalWrapper from './components/layout/ModalAnimation'
 import SizeShift from './components/layout/SizeShift'
 import SlideUpFadeIn from './components/text/SlideUpFadeIn'
 import Typewriter from './components/text/Typewriter'
-import PTHome from './pages/PTHome'
 import './App.css'
 
 function App() {
@@ -33,7 +32,7 @@ function App() {
 				<h2>Layout Animations</h2>
 				<li onClick={() => handleClick(ModalWrapper)}>Modal Animation</li>
 				<li onClick={() => handleClick(SizeShift)}>Size Shift</li>
-				<li><Link to="pthome">Page Transitions (opens new page)</Link></li>
+				<li><Link to="/pthome">Page Transitions (go to page)</Link></li>
 			</ul>
 
 			<main>
