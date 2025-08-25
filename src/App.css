@@ -36,3 +36,42 @@ main {
     border: 1px solid gainsboro;
     padding: 1rem;
 }
+
+/* Modal Animation */
+
+.overlay {
+    font-family: Arial, Helvetica, sans-serif;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.modal-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.open-button {
+    padding: 10px 20px;
+}
+
+.modal-card {
+    background: white;
+    padding: 20px 30px;
+    border-radius: 8px;
+    max-width: 500px;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+.close-button {
+    margin-top: 20px;
+    padding: 8px 16px;
+    cursor: pointer;
+}
