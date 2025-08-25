@@ -54,10 +54,12 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+    /* height: 100vh; */
 }
 
 .open-button {
     padding: 10px 20px;
+    cursor: pointer;
 }
 
 .modal-card {

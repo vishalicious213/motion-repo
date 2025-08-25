@@ -26,7 +26,7 @@ const Modal = ({ onClose }) => {
                 <p>**Get 20% off your next purchase!</p>
                 <p>Use code <strong>SAVE20</strong> at checkout.</p>
                 <p>Hurry, this offer is valud until midnight!</p>
-                <button className="close-button">Close</button>
+                <button className="close-button" onClick={onClose}>Close</button>
             </motion.div>
         </motion.div>
     )
