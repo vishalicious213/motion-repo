@@ -1,7 +1,7 @@
 import { useState } from "react"
 import { motion, AnimatePresence } from "motion/react"
 
-const ModalAnimation = ({ onClose }) => {
+const Modal = ({ onClose }) => {
     return (
         <motion.div
             className="overlay"
@@ -32,4 +32,20 @@ const ModalAnimation = ({ onClose }) => {
     )
 }
 
-export default ModalAnimation
+const ModalWrapper = () => {
+    const [isOpen, setIsOpen] = useState(false)
+
+    return (
+        <div className="modal-wrapper">
+            <button className="open-button" onClick={() => setIsOpen(true)}>
+                Open Modal
+            </button>
+
+            <AnimatePresence>
+                {isOpen && <Modal onClose={() => setIsOpen(false)} />}
+            </AnimatePresence>
+        </div>
+    )
+}
+
+export default ModalWrapper
