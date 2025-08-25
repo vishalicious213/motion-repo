@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import Info from './components/Info'
 import ColorChange from './components/text/ColorChange'
+import ModalAnimation from './components/layout/ModalAnimation'
 import SizeShift from './components/layout/SizeShift'
 import SlideUpFadeIn from './components/text/SlideUpFadeIn'
 import Typewriter from './components/text/Typewriter'
@@ -28,6 +29,7 @@ function App() {
 				<li onClick={() => handleClick(Typewriter)}>Typewriter</li>
 
 				<h2>Layout Animations</h2>
+				<li onClick={() => handleClick(ModalAnimation)}>Modal Animation</li>
 				<li onClick={() => handleClick(SizeShift)}>Size Shift</li>
 			</ul>
 
