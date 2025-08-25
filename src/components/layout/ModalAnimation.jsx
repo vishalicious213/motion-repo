@@ -22,7 +22,11 @@ const ModalAnimation = ({ onClose }) => {
                     damping: 25
                 }}
             >
-
+                <h2>Exclusive Offer Just for You!</h2>
+                <p>**Get 20% off your next purchase!</p>
+                <p>Use code <strong>SAVE20</strong> at checkout.</p>
+                <p>Hurry, this offer is valud until midnight!</p>
+                <button className="close-button">Close</button>
             </motion.div>
         </motion.div>
     )
