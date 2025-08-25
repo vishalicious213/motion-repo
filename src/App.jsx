@@ -1,10 +1,12 @@
 import { useState } from 'react'
+import { Link } from 'react-router'
 import Info from './components/Info'
 import ColorChange from './components/text/ColorChange'
 import ModalWrapper from './components/layout/ModalAnimation'
 import SizeShift from './components/layout/SizeShift'
 import SlideUpFadeIn from './components/text/SlideUpFadeIn'
 import Typewriter from './components/text/Typewriter'
+import PTHome from './pages/PTHome'
 import './App.css'
 
 function App() {
@@ -20,7 +22,7 @@ function App() {
 		<>
 			<h1>Motion animations</h1>
 
-			<ul>
+			<ul className='motion-list'>
 				<li onClick={() => handleClick(Info)}>Info</li>
 
 				<h2>Text Animations</h2>
@@ -31,6 +33,7 @@ function App() {
 				<h2>Layout Animations</h2>
 				<li onClick={() => handleClick(ModalWrapper)}>Modal Animation</li>
 				<li onClick={() => handleClick(SizeShift)}>Size Shift</li>
+				<li><Link to="pthome">Page Transitions (opens new page)</Link></li>
 			</ul>
 
 			<main>
