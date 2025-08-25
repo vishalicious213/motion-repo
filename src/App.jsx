@@ -1,6 +1,7 @@
 import { useState } from 'react'
-import Info from './components/text/Info'
+import Info from './components/Info'
 import ColorChange from './components/text/ColorChange'
+import SizeShift from './components/layout/SizeShift'
 import SlideUpFadeIn from './components/text/SlideUpFadeIn'
 import Typewriter from './components/text/Typewriter'
 import './App.css'
@@ -25,6 +26,9 @@ function App() {
 				<li onClick={() => handleClick(ColorChange)}>Color Changing Text</li>
 				<li onClick={() => handleClick(SlideUpFadeIn)}>Slide Up, Fade In</li>
 				<li onClick={() => handleClick(Typewriter)}>Typewriter</li>
+
+				<h2>Layout Animations</h2>
+				<li onClick={() => handleClick(SizeShift)}>Size Shift</li>
 			</ul>
 
 			<main>
