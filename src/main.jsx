@@ -1,11 +1,12 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import { BrowserRouter, Routes, Route } from 'react-router'
-import { AnimatePresence } from 'motion/react'
+import { AnimatePresence, motion } from 'motion/react'
 import PTHome from './pages/PTHome.jsx'
 import PTAbout from './pages/PTAbout.jsx'
 import './index.css'
 import App from './App.jsx'
+import { div } from 'motion/react-client'
 
 createRoot(document.getElementById('root')).render(
 	<StrictMode>
@@ -20,3 +21,17 @@ createRoot(document.getElementById('root')).render(
 		</BrowserRouter>
 	</StrictMode>,
 )
+
+
+function PageWrapper({ children }) {
+	return (
+		<motion.div
+			initial={{ opacity: 0, y: 20 }}
+			animate={{ opacity: 1, y: 0 }}
+			exit={{ opacity: 0, y: -20 }}
+			transition={{ duration: 0.5 }}
+		>
+			{ children }
+		</motion.div>
+	)
+}
