@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import Info from './components/text/Info'
+import ColorChange from './components/text/ColorChange'
 import SlideUpFadeIn from './components/text/SlideUpFadeIn'
 import Typewriter from './components/text/Typewriter'
 import './App.css'
@@ -21,6 +22,7 @@ function App() {
 				<li onClick={() => handleClick(Info)}>Info</li>
 
 				<h2>Text Animations</h2>
+				<li onClick={() => handleClick(ColorChange)}>Color Changing Text</li>
 				<li onClick={() => handleClick(SlideUpFadeIn)}>Slide Up, Fade In</li>
 				<li onClick={() => handleClick(Typewriter)}>Typewriter</li>
 			</ul>
