@@ -5,7 +5,7 @@ const SizeShift = () => {
     const [size, setSize] = useState(100)
 
     const toggleSize = () => {
-        setSize(size === 100 ? 150 : 100)
+        setSize(prev => prev === 100 ? 150 : 100)
     }
 
     return (
