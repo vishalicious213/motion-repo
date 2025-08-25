@@ -18,6 +18,7 @@ const SizeShift = () => {
                     background: "lightblue",
                     margin: "20px"
                 }}
+                layout
             >
 
             </motion.div>
