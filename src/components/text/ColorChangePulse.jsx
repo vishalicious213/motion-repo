@@ -1,6 +1,6 @@
 import { motion } from "motion/react"
 
-const ColorChange = () => {
+const ColorChangePulse = () => {
     return (
         <motion.div
             className="gradient-text-pulse"
@@ -17,4 +17,4 @@ const ColorChange = () => {
     )
 }
 
-export default ColorChange
+export default ColorChangePulse

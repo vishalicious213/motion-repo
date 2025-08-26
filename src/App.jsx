@@ -3,6 +3,7 @@ import { Link } from 'react-router'
 import Info from './components/Info'
 import ColorChange from './components/text/ColorChange'
 import ColorChangeLTR from './components/text/ColorChangeLtR'
+import ColorChangePulse from './components/text/ColorChangePulse'
 import ColorChangeSplit from './components/text/ColorChangeSplit'
 import ModalWrapper from './components/layout/ModalAnimation'
 import SizeShift from './components/layout/SizeShift'
@@ -29,6 +30,7 @@ function App() {
 				<h2>Text Animations</h2>
 				<li onClick={() => handleClick(ColorChange)}>Color Changing Text</li>
 				<li onClick={() => handleClick(ColorChangeLTR)}>Color Changing Text LtR using gradient</li>
+				<li onClick={() => handleClick(ColorChangePulse)}>Color Changing Text, pulsing</li>
 				<li onClick={() => handleClick(ColorChangeSplit)}>Color Changing Text LtR split characters</li>
 				<li onClick={() => handleClick(SlideUpFadeIn)}>Slide Up, Fade In</li>
 				<li onClick={() => handleClick(Typewriter)}>Typewriter</li>
