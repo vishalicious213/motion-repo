@@ -22,8 +22,22 @@ function AnimatedRoutes() {
 		<AnimatePresence mode="wait">
 			<Routes location={location} key={location.pathname}>
 				<Route path="/" element={<App />} />
-				<Route path="/pthome" element={<PTHome />} />
-				<Route path="/ptabout" element={<PTAbout />} />
+				<Route 
+					path="/pthome" 
+					element={
+						<PageWrapper>
+							<PTHome />
+						</PageWrapper>
+					} 
+				/>
+				<Route 
+					path="/ptabout" 
+					element={
+						<PageWrapper>
+							<PTAbout />
+						</PageWrapper>
+					} 
+				/>
 			</Routes>
 		</AnimatePresence>
 	)
