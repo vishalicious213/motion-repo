@@ -7,9 +7,10 @@ const ColorChangeLTR = () => {
             initial={{ backgroundPosition: "0% 50%" }}
             animate={{ backgroundPosition: ["0% 50%", "100% 50%"] }}
             transition={{
-                duration: 2,
+                duration: 5,
                 repeat: Infinity,
-                ease: "linear"
+                repeatType: "reverse",
+                ease: "easeInOut"
             }}
         >
             Color Change using gradient background
