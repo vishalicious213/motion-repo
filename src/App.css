@@ -42,7 +42,8 @@ li {
 }
 
 li:hover {
-    background: gainsboro;
+    /* background: gainsboro; */
+    background: linear-gradient(90deg, #E8E8E8, #F5F5F5);
 }
 
 code {
@@ -61,10 +62,6 @@ main {
     text-decoration: none;
     color: black;
     width: 100%;
-}
-
-.motion-list a:hover {
-    background: gainsboro;
 }
 
 /* Modal Animation */
