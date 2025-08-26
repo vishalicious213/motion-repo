@@ -1,9 +1,8 @@
-import { motion, AnimatePresence } from "motion/react"
 import PTNav from "../components/PTNav"
 
 const PTAbout = () => {
     return (
-        <div>
+        <div style={{ padding: "2rem 0" }}>
             <PTNav />
             <h1>Welcome to the About Page</h1>
 

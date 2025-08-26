@@ -43,7 +43,6 @@ function AnimatedRoutes() {
 	)
 }
 
-
 function PageWrapper({ children }) {
 	return (
 		<motion.div
