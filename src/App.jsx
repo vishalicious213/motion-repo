@@ -22,7 +22,7 @@ function App() {
 
 	return (
 		<>
-			<h1>Motion animations</h1>
+			<h1>React Motion</h1>
 
 			<ul className='motion-list'>
 				<li onClick={() => handleClick(Info)}>Info</li>
