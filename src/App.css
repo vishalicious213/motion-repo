@@ -20,6 +20,7 @@ ul {
 
 li {
     padding: .25rem .5rem;
+    transition: .3s;
 }
 
 li:hover {
@@ -87,4 +88,19 @@ main {
     margin-top: 20px;
     padding: 8px 16px;
     cursor: pointer;
+}
+
+/* nav (for Page Transitions example */
+
+nav {
+    display: flex;
+    gap: 10px;
+    list-style: none;
+    padding: 10px 40px;
+    border-bottom: 1px solid gainsboro;
+}
+
+nav a {
+    color: #000;
+    text-decoration: none;
 }
