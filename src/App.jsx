@@ -8,6 +8,7 @@ import ColorChangeSplit from './components/text/ColorChangeSplit'
 import ModalWrapper from './components/layout/ModalAnimation'
 import SizeShift from './components/layout/SizeShift'
 import SlideUpFadeIn from './components/text/SlideUpFadeIn'
+import StaggeredUl from './components/coordination/StaggeredUl'
 import Typewriter from './components/text/Typewriter'
 import './App.css'
 
@@ -41,6 +42,9 @@ function App() {
 				<li onClick={() => handleClick(ModalWrapper)}>Modal Animation</li>
 				<li onClick={() => handleClick(SizeShift)}>Size Shift</li>
 				<li><Link to="/pthome">Page Transitions (go to page)</Link></li>
+
+				<h2>Coordination</h2>
+				<li onClick={() => handleClick(StaggeredUl)}>Staggered List</li>
 			</ul>
 
 			<main>
