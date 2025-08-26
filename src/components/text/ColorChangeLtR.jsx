@@ -1,6 +1,6 @@
 import { motion } from "motion/react"
 
-const ColorChange = () => {
+const ColorChangeLTR = () => {
     return (
         <motion.div
             className="gradient-text"
@@ -12,9 +12,9 @@ const ColorChange = () => {
                 ease: "linear"
             }}
         >
-            Color Change
+            Color Change using gradient background
         </motion.div>
     )
 }
 
-export default ColorChange
+export default ColorChangeLTR

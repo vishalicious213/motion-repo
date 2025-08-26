@@ -104,3 +104,14 @@ nav a {
     color: #000;
     text-decoration: none;
 }
+
+/* ColorChangeLtR */
+
+.gradient-text {
+    font-size: 2rem;
+    font-weight: bold;
+    background: linear-gradient(90deg, #6a9bd1, #4c6ef5, #1a3e96, #ff0000);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 100%;
+}
