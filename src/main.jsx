@@ -1,26 +1,33 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import { BrowserRouter, Routes, Route } from 'react-router'
+import { BrowserRouter, Routes, Route, useLocation } from 'react-router'
 import { AnimatePresence, motion } from 'motion/react'
 import PTHome from './pages/PTHome.jsx'
 import PTAbout from './pages/PTAbout.jsx'
 import './index.css'
 import App from './App.jsx'
-import { div } from 'motion/react-client'
 
 createRoot(document.getElementById('root')).render(
 	<StrictMode>
 		<BrowserRouter>
-			<AnimatePresence mode="wait">
-				<Routes location={location} key={location.pathname}>
-					<Route path="/" element={<App />} />
-					<Route path="/pthome" element={<PTHome />} />
-					<Route path="/ptabout" element={<PTAbout />} />
-				</Routes>
-			</AnimatePresence>
+			<AnimatedRoutes />
 		</BrowserRouter>
-	</StrictMode>,
+	</StrictMode>
 )
+
+function AnimatedRoutes() {
+	const location = useLocation()
+
+	return (
+		<AnimatePresence mode="wait">
+			<Routes location={location} key={location.pathname}>
+				<Route path="/" element={<App />} />
+				<Route path="/pthome" element={<PTHome />} />
+				<Route path="/ptabout" element={<PTAbout />} />
+			</Routes>
+		</AnimatePresence>
+	)
+}
 
 
 function PageWrapper({ children }) {
