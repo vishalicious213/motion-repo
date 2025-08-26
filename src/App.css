@@ -125,3 +125,20 @@ nav a {
     -webkit-text-fill-color: transparent;
     background-size: 400% 100%;
 }
+
+
+.gradient-text-pulse {
+    font-size: 2rem;
+    font-weight: bold;
+    background: linear-gradient(
+        90deg,
+        #6a9bd1,
+        #4c6ef5,
+        #1a3e96,
+        #ff0000
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 100% 100%;
+    background-position: center;
+}
