@@ -27,15 +27,17 @@ function App() {
 			<ul className='motion-list'>
 				<li onClick={() => handleClick(Info)}>Info</li>
 
-				<h2>Text Animations</h2>
-				<li onClick={() => handleClick(ColorChange)}>Color Changing Text</li>
-				<li onClick={() => handleClick(ColorChangeLTR)}>Color Changing Text LtR using gradient</li>
-				<li onClick={() => handleClick(ColorChangePulse)}>Color Changing Text, pulsing</li>
-				<li onClick={() => handleClick(ColorChangeSplit)}>Color Changing Text LtR split characters</li>
+				<h2>Text</h2>
 				<li onClick={() => handleClick(SlideUpFadeIn)}>Slide Up, Fade In</li>
 				<li onClick={() => handleClick(Typewriter)}>Typewriter</li>
 
-				<h2>Layout Animations</h2>
+				<h3>▸ Color Changing</h3>
+				<li onClick={() => handleClick(ColorChange)}>Color Changing Text</li>
+				<li onClick={() => handleClick(ColorChangeLTR)}>LtR using gradient</li>
+				<li onClick={() => handleClick(ColorChangePulse)}>Pulsing</li>
+				<li onClick={() => handleClick(ColorChangeSplit)}>LtR split characters</li>
+
+				<h2>Layout</h2>
 				<li onClick={() => handleClick(ModalWrapper)}>Modal Animation</li>
 				<li onClick={() => handleClick(SizeShift)}>Size Shift</li>
 				<li><Link to="/pthome">Page Transitions (go to page)</Link></li>

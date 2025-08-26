@@ -3,16 +3,24 @@ body {
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-h1, h2 {
+h1 {
+    font-size: 1.5rem;
     margin: 1rem 0;
 }
 
-h1 {
-    font-size: 1.5rem;
+h2, h3 {
+    margin: 1rem 0 1rem -1.5rem;
+    padding: .25rem .5rem;
 }
 
 h2 {
     font-size: 1.25rem;
+    background: #E0E0E0;
+}
+
+h3 {
+    font-size: 1rem;
+    background: #F0F0F0;
 }
 
 p {
@@ -30,6 +38,7 @@ li {
     padding: .25rem .5rem;
     transition: .3s;
     font-size: .9rem;
+    border-bottom: 1px solid whitesmoke;
 }
 
 li:hover {
