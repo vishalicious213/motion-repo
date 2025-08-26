@@ -34,8 +34,8 @@ function App() {
 				<h3>▸ Color Changing</h3>
 				<li onClick={() => handleClick(ColorChange)}>Color Changing Text</li>
 				<li onClick={() => handleClick(ColorChangeLTR)}>LtR using gradient</li>
-				<li onClick={() => handleClick(ColorChangePulse)}>Pulsing</li>
 				<li onClick={() => handleClick(ColorChangeSplit)}>LtR split characters</li>
+				<li onClick={() => handleClick(ColorChangePulse)}>Pulsing</li>
 
 				<h2>Layout</h2>
 				<li onClick={() => handleClick(ModalWrapper)}>Modal Animation</li>
