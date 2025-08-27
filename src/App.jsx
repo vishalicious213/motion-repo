@@ -5,6 +5,7 @@ import ColorChange from './components/text/ColorChange'
 import ColorChangeLTR from './components/text/ColorChangeLtR'
 import ColorChangePulse from './components/text/ColorChangePulse'
 import ColorChangeSplit from './components/text/ColorChangeSplit'
+import FadeAndScale from './components/general/FadeAndScale'
 import ModalWrapper from './components/layout/ModalAnimation'
 import SizeShift from './components/layout/SizeShift'
 import SlideUpFadeIn from './components/text/SlideUpFadeIn'
@@ -49,6 +50,9 @@ function App() {
 
 				<h2>Coordination</h2>
 				<li onClick={() => handleClick(StaggeredUl)}>Staggered List</li>
+
+				<h2>General Element</h2>
+				<li onClick={() => handleClick(FadeAndScale)}>Fade & Scale</li>
 			</ul>
 		</>
 	)
