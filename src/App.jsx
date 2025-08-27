@@ -9,6 +9,7 @@ import FadeAndScale from './components/general/FadeAndScale'
 import ModalWrapper from './components/layout/ModalAnimation'
 import SizeShift from './components/layout/SizeShift'
 import SlideInFromLeft from './components/general/SlideInFromLeft'
+import SlideInFromRight from './components/general/SlideInFromRight'
 import SlideUpFadeIn from './components/text/SlideUpFadeIn'
 import SlideUp from './components/general/SlideUp'
 import StaggeredUl from './components/coordination/StaggeredUl'
@@ -57,6 +58,7 @@ function App() {
 				<li onClick={() => handleClick(FadeAndScale)}>Fade & Scale</li>
 				<li onClick={() => handleClick(SlideUp)}>Slide Up From Bottom</li>
 				<li onClick={() => handleClick(SlideInFromLeft)}>Slide In From Left</li>
+				<li onClick={() => handleClick(SlideInFromRight)}>Slide In From Right</li>
 			</ul>
 		</>
 	)
