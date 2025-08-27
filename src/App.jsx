@@ -9,6 +9,7 @@ import FadeAndScale from './components/general/FadeAndScale'
 import ModalWrapper from './components/layout/ModalAnimation'
 import SizeShift from './components/layout/SizeShift'
 import SlideUpFadeIn from './components/text/SlideUpFadeIn'
+import SlideUp from './components/general/SlideUp'
 import StaggeredUl from './components/coordination/StaggeredUl'
 import Typewriter from './components/text/Typewriter'
 import './App.css'
@@ -53,6 +54,7 @@ function App() {
 
 				<h2>General Element</h2>
 				<li onClick={() => handleClick(FadeAndScale)}>Fade & Scale</li>
+				<li onClick={() => handleClick(SlideUp)}>Slide Up From Bottom</li>
 			</ul>
 		</>
 	)
