@@ -9,7 +9,7 @@ h1 {
 }
 
 h2, h3 {
-    margin: 1rem 0 1rem -1.5rem;
+    margin: 1rem 0;
     padding: .25rem .5rem;
 }
 
@@ -30,7 +30,6 @@ p {
 
 ul {
     margin-left: 1rem;
-    margin-bottom: 3rem;
     cursor: pointer;
 }
 
@@ -42,7 +41,6 @@ li {
 }
 
 li:hover {
-    /* background: gainsboro; */
     background: linear-gradient(90deg, #E8E8E8, #F5F5F5);
 }
 
@@ -55,6 +53,20 @@ code {
 main {
     border: 1px solid gainsboro;
     padding: 1rem;
+    margin: 1rem 0;
+}
+
+.motion-list {
+    border: 1px solid gainsboro;
+    padding: .5rem;
+    max-height: 50vh;
+    width: 100%;
+    margin-left: 0;
+    overflow: auto;
+}
+
+.motion-list li {
+    margin-left: 1.5rem;
 }
 
 .motion-list a {

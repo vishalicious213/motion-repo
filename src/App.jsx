@@ -25,6 +25,10 @@ function App() {
 		<>
 			<h1>React Motion</h1>
 
+			<main>
+				{Animation && <Animation key={renderKey} />}
+			</main>
+
 			<ul className='motion-list'>
 				<li onClick={() => handleClick(Info)}>Info</li>
 
@@ -46,10 +50,6 @@ function App() {
 				<h2>Coordination</h2>
 				<li onClick={() => handleClick(StaggeredUl)}>Staggered List</li>
 			</ul>
-
-			<main>
-				{Animation && <Animation key={renderKey} />}
-			</main>
 		</>
 	)
 }
